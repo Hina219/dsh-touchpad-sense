@@ -1,0 +1,28 @@
+{
+  "name": "dsh-touchpad-sense",
+  "version": "0.4.0",
+  "description": "Windows Precision Touchpad digitizer sensing and AI wake replies for DeepSeek Harness",
+  "license": "MIT",
+  "os": ["win32"],
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-plugins"
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+- insert:
+    - id: touchpad-sense
+      name: dsh-touchpad-sense
+      config: {}

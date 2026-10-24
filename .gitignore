@@ -1,0 +1,5 @@
+collector/bin/
+collector/obj/
+node_modules/
+*.log
+.DS_Store
